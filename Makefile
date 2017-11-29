@@ -8,6 +8,7 @@ include Makefile.mk
 
 DESTDIR =
 PREFIX  = /usr
+SUFFIX ?= /lib/lv2
 
 # ---------------------------------------------------------------------------------------------------------------------
 
@@ -23,208 +24,208 @@ distclean: clean
 	rm -f *.lv2/*.tar.7z
 
 install:
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/AirFont320.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/AVL_Drumkits_Perc.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/Black_Pearl_4A.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/Black_Pearl_4B.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/Black_Pearl_5.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/Red_Zeppelin_4.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/Red_Zeppelin_5.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidGM.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidBass.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidBrass.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidChromPerc.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidDrums.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidEnsemble.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidEthnic.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidGuitars.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidOrgans.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidPercussion.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidPianos.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidPipes.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidReeds.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidSoundFX.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidStrings.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidSynthFX.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidSynthLeads.lv2
-	install -d $(DESTDIR)$(PREFIX)/lib/lv2/FluidSynthPads.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/AirFont320.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/AVL_Drumkits_Perc.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_4A.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_4B.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_5.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/Red_Zeppelin_4.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/Red_Zeppelin_5.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidGM.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidBass.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidBrass.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidChromPerc.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidDrums.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidEnsemble.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidEthnic.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidGuitars.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidOrgans.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidPercussion.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidPianos.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidPipes.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidReeds.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSoundFX.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidStrings.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSynthFX.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSynthLeads.lv2
+	install -d $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSynthPads.lv2
 
 	install -m 644 \
 		AirFont320.lv2/*.sf2 \
 		AirFont320.lv2/*.so \
 		AirFont320.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/AirFont320.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/AirFont320.lv2
 
 	install -m 644 \
 		AVL_Drumkits_Perc.lv2/*.sf2 \
 		AVL_Drumkits_Perc.lv2/*.so \
 		AVL_Drumkits_Perc.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/AVL_Drumkits_Perc.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/AVL_Drumkits_Perc.lv2
 
 	install -m 644 \
 		Black_Pearl_4A.lv2/*.sf2 \
 		Black_Pearl_4A.lv2/*.so \
 		Black_Pearl_4A.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/Black_Pearl_4A.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_4A.lv2
 
 	install -m 644 \
 		Black_Pearl_4B.lv2/*.sf2 \
 		Black_Pearl_4B.lv2/*.so \
 		Black_Pearl_4B.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/Black_Pearl_4B.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_4B.lv2
 
 	install -m 644 \
 		Black_Pearl_5.lv2/*.sf2 \
 		Black_Pearl_5.lv2/*.so \
 		Black_Pearl_5.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/Black_Pearl_5.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_5.lv2
 
 	install -m 644 \
 		Red_Zeppelin_4.lv2/*.sf2 \
 		Red_Zeppelin_4.lv2/*.so \
 		Red_Zeppelin_4.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/Red_Zeppelin_4.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/Red_Zeppelin_4.lv2
 
 	install -m 644 \
 		Red_Zeppelin_5.lv2/*.sf2 \
 		Red_Zeppelin_5.lv2/*.so \
 		Red_Zeppelin_5.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/Red_Zeppelin_5.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/Red_Zeppelin_5.lv2
 
 	install -m 644 \
 		FluidGM.lv2/*.sf2 \
 		FluidGM.lv2/*.so \
 		FluidGM.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidGM.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidGM.lv2
 
 	install -m 644 \
 		FluidBass.lv2/*.sf2 \
 		FluidBass.lv2/*.so \
 		FluidBass.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidBass.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidBass.lv2
 
 	install -m 644 \
 		FluidBrass.lv2/*.sf2 \
 		FluidBrass.lv2/*.so \
 		FluidBrass.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidBrass.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidBrass.lv2
 
 	install -m 644 \
 		FluidChromPerc.lv2/*.sf2 \
 		FluidChromPerc.lv2/*.so \
 		FluidChromPerc.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidChromPerc.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidChromPerc.lv2
 
 	install -m 644 \
 		FluidDrums.lv2/*.sf2 \
 		FluidDrums.lv2/*.so \
 		FluidDrums.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidDrums.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidDrums.lv2
 
 	install -m 644 \
 		FluidEnsemble.lv2/*.sf2 \
 		FluidEnsemble.lv2/*.so \
 		FluidEnsemble.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidEnsemble.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidEnsemble.lv2
 
 	install -m 644 \
 		FluidEthnic.lv2/*.sf2 \
 		FluidEthnic.lv2/*.so \
 		FluidEthnic.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidEthnic.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidEthnic.lv2
 
 	install -m 644 \
 		FluidGuitars.lv2/*.sf2 \
 		FluidGuitars.lv2/*.so \
 		FluidGuitars.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidGuitars.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidGuitars.lv2
 
 	install -m 644 \
 		FluidOrgans.lv2/*.sf2 \
 		FluidOrgans.lv2/*.so \
 		FluidOrgans.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidOrgans.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidOrgans.lv2
 
 	install -m 644 \
 		FluidPercussion.lv2/*.sf2 \
 		FluidPercussion.lv2/*.so \
 		FluidPercussion.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidPercussion.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidPercussion.lv2
 
 	install -m 644 \
 		FluidPianos.lv2/*.sf2 \
 		FluidPianos.lv2/*.so \
 		FluidPianos.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidPianos.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidPianos.lv2
 
 	install -m 644 \
 		FluidPipes.lv2/*.sf2 \
 		FluidPipes.lv2/*.so \
 		FluidPipes.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidPipes.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidPipes.lv2
 
 	install -m 644 \
 		FluidReeds.lv2/*.sf2 \
 		FluidReeds.lv2/*.so \
 		FluidReeds.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidReeds.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidReeds.lv2
 
 	install -m 644 \
 		FluidSoundFX.lv2/*.sf2 \
 		FluidSoundFX.lv2/*.so \
 		FluidSoundFX.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidSoundFX.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSoundFX.lv2
 
 	install -m 644 \
 		FluidStrings.lv2/*.sf2 \
 		FluidStrings.lv2/*.so \
 		FluidStrings.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidStrings.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidStrings.lv2
 
 	install -m 644 \
 		FluidSynthFX.lv2/*.sf2 \
 		FluidSynthFX.lv2/*.so \
 		FluidSynthFX.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidSynthFX.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSynthFX.lv2
 
 	install -m 644 \
 		FluidSynthLeads.lv2/*.sf2 \
 		FluidSynthLeads.lv2/*.so \
 		FluidSynthLeads.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidSynthLeads.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSynthLeads.lv2
 
 	install -m 644 \
 		FluidSynthPads.lv2/*.sf2 \
 		FluidSynthPads.lv2/*.so \
 		FluidSynthPads.lv2/*.ttl \
-		$(DESTDIR)$(PREFIX)/lib/lv2/FluidSynthPads.lv2
+		$(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSynthPads.lv2
 
 	# recursive copy
-	cp -r AirFont320.lv2/modgui      $(DESTDIR)$(PREFIX)/lib/lv2/AirFont320.lv2
-# 	cp -r AVL_Drumkits_Perc/modgui   $(DESTDIR)$(PREFIX)/lib/lv2/AVL_Drumkits_Perc.lv2
-# 	cp -r Black_Pearl_4A/modgui      $(DESTDIR)$(PREFIX)/lib/lv2/Black_Pearl_4A.lv2
-# 	cp -r Black_Pearl_4B/modgui      $(DESTDIR)$(PREFIX)/lib/lv2/Black_Pearl_4B.lv2
-# 	cp -r Black_Pearl_5/modgui       $(DESTDIR)$(PREFIX)/lib/lv2/Black_Pearl_5.lv2
-# 	cp -r Red_Zeppelin_4/modgui      $(DESTDIR)$(PREFIX)/lib/lv2/Red_Zeppelin_4.lv2
-# 	cp -r Red_Zeppelin_5/modgui      $(DESTDIR)$(PREFIX)/lib/lv2/Red_Zeppelin_5.lv2
-	cp -r FluidGM.lv2/modgui         $(DESTDIR)$(PREFIX)/lib/lv2/FluidGM.lv2
-	cp -r FluidBass.lv2/modgui       $(DESTDIR)$(PREFIX)/lib/lv2/FluidBass.lv2
-	cp -r FluidBrass.lv2/modgui      $(DESTDIR)$(PREFIX)/lib/lv2/FluidBrass.lv2
-	cp -r FluidChromPerc.lv2/modgui  $(DESTDIR)$(PREFIX)/lib/lv2/FluidChromPerc.lv2
-	cp -r FluidDrums.lv2/modgui      $(DESTDIR)$(PREFIX)/lib/lv2/FluidDrums.lv2
-	cp -r FluidEnsemble.lv2/modgui   $(DESTDIR)$(PREFIX)/lib/lv2/FluidEnsemble.lv2
-	cp -r FluidEthnic.lv2/modgui     $(DESTDIR)$(PREFIX)/lib/lv2/FluidEthnic.lv2
-	cp -r FluidGuitars.lv2/modgui    $(DESTDIR)$(PREFIX)/lib/lv2/FluidGuitars.lv2
-	cp -r FluidOrgans.lv2/modgui     $(DESTDIR)$(PREFIX)/lib/lv2/FluidOrgans.lv2
-	cp -r FluidPercussion.lv2/modgui $(DESTDIR)$(PREFIX)/lib/lv2/FluidPercussion.lv2
-	cp -r FluidPianos.lv2/modgui     $(DESTDIR)$(PREFIX)/lib/lv2/FluidPianos.lv2
-	cp -r FluidPipes.lv2/modgui      $(DESTDIR)$(PREFIX)/lib/lv2/FluidPipes.lv2
-	cp -r FluidReeds.lv2/modgui      $(DESTDIR)$(PREFIX)/lib/lv2/FluidReeds.lv2
-	cp -r FluidSoundFX.lv2/modgui    $(DESTDIR)$(PREFIX)/lib/lv2/FluidSoundFX.lv2
-	cp -r FluidStrings.lv2/modgui    $(DESTDIR)$(PREFIX)/lib/lv2/FluidStrings.lv2
-	cp -r FluidSynthFX.lv2/modgui    $(DESTDIR)$(PREFIX)/lib/lv2/FluidSynthFX.lv2
-	cp -r FluidSynthLeads.lv2/modgui $(DESTDIR)$(PREFIX)/lib/lv2/FluidSynthLeads.lv2
-	cp -r FluidSynthPads.lv2/modgui  $(DESTDIR)$(PREFIX)/lib/lv2/FluidSynthPads.lv2
+	cp -r AirFont320.lv2/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/AirFont320.lv2
+# 	cp -r AVL_Drumkits_Perc/modgui   $(DESTDIR)$(PREFIX)$(SUFFIX)/AVL_Drumkits_Perc.lv2
+# 	cp -r Black_Pearl_4A/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_4A.lv2
+# 	cp -r Black_Pearl_4B/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_4B.lv2
+# 	cp -r Black_Pearl_5/modgui       $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_5.lv2
+# 	cp -r Red_Zeppelin_4/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/Red_Zeppelin_4.lv2
+# 	cp -r Red_Zeppelin_5/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/Red_Zeppelin_5.lv2
+	cp -r FluidGM.lv2/modgui         $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidGM.lv2
+	cp -r FluidBass.lv2/modgui       $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidBass.lv2
+	cp -r FluidBrass.lv2/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidBrass.lv2
+	cp -r FluidChromPerc.lv2/modgui  $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidChromPerc.lv2
+	cp -r FluidDrums.lv2/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidDrums.lv2
+	cp -r FluidEnsemble.lv2/modgui   $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidEnsemble.lv2
+	cp -r FluidEthnic.lv2/modgui     $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidEthnic.lv2
+	cp -r FluidGuitars.lv2/modgui    $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidGuitars.lv2
+	cp -r FluidOrgans.lv2/modgui     $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidOrgans.lv2
+	cp -r FluidPercussion.lv2/modgui $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidPercussion.lv2
+	cp -r FluidPianos.lv2/modgui     $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidPianos.lv2
+	cp -r FluidPipes.lv2/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidPipes.lv2
+	cp -r FluidReeds.lv2/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidReeds.lv2
+	cp -r FluidSoundFX.lv2/modgui    $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSoundFX.lv2
+	cp -r FluidStrings.lv2/modgui    $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidStrings.lv2
+	cp -r FluidSynthFX.lv2/modgui    $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSynthFX.lv2
+	cp -r FluidSynthLeads.lv2/modgui $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSynthLeads.lv2
+	cp -r FluidSynthPads.lv2/modgui  $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidSynthPads.lv2
 
 # ---------------------------------------------------------------------------------------------------------------------
 
