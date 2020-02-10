@@ -202,12 +202,12 @@ install:
 
 	# recursive copy
 	cp -r AirFont320.lv2/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/AirFont320.lv2
-# 	cp -r AVL_Drumkits_Perc/modgui   $(DESTDIR)$(PREFIX)$(SUFFIX)/AVL_Drumkits_Perc.lv2
-# 	cp -r Black_Pearl_4A/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_4A.lv2
-# 	cp -r Black_Pearl_4B/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_4B.lv2
-# 	cp -r Black_Pearl_5/modgui       $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_5.lv2
-# 	cp -r Red_Zeppelin_4/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/Red_Zeppelin_4.lv2
-# 	cp -r Red_Zeppelin_5/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/Red_Zeppelin_5.lv2
+	cp -r AVL_Drumkits_Perc.lv2/modgui $(DESTDIR)$(PREFIX)$(SUFFIX)/AVL_Drumkits_Perc.lv2
+	cp -r Black_Pearl_4A.lv2/modgui  $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_4A.lv2
+	cp -r Black_Pearl_4B.lv2/modgui  $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_4B.lv2
+	cp -r Black_Pearl_5.lv2/modgui   $(DESTDIR)$(PREFIX)$(SUFFIX)/Black_Pearl_5.lv2
+	cp -r Red_Zeppelin_4.lv2/modgui  $(DESTDIR)$(PREFIX)$(SUFFIX)/Red_Zeppelin_4.lv2
+	cp -r Red_Zeppelin_5.lv2/modgui  $(DESTDIR)$(PREFIX)$(SUFFIX)/Red_Zeppelin_5.lv2
 	cp -r FluidGM.lv2/modgui         $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidGM.lv2
 	cp -r FluidBass.lv2/modgui       $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidBass.lv2
 	cp -r FluidBrass.lv2/modgui      $(DESTDIR)$(PREFIX)$(SUFFIX)/FluidBrass.lv2
